@@ -1,0 +1,59 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled1.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyNX8U8EYdMPScVVXyW+5Wg6",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/sUkRiTi-SHaRMA06/Starting-Concepts/blob/main/PERCENTAGE%20CONCEPT\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "BAZnEkEqRxBV",
+        "outputId": "d0554feb-7ad4-4cd1-c472-5bb1136c444f"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "71.5 84.75\n"
+          ]
+        }
+      ],
+      "source": [
+        "marks=[45,78,86,77]\n",
+        "percentage1=(sum(marks)/400)*100\n",
+        "\n",
+        "marks2=[75,98,88,78]\n",
+        "percentage2=(sum(marks2)/400)*100\n",
+        "print(percentage1,percentage2)\n"
+      ]
+    }
+  ]
+}
