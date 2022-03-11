@@ -1,0 +1,527 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled1.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyPgLtawWK9gphhfVEExhK6c",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/sUkRiTi-SHaRMA06/Starting-Concepts/blob/main/WORK\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "EBPNQWZpDprn",
+        "outputId": "6413d46b-147b-462a-fca8-bcc2fd4f5a0c"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter your number:9\n",
+            "the factorial of 9 is 362880\n"
+          ]
+        }
+      ],
+      "source": [
+        "num=int(input(\"enter your number:\"))\n",
+        "factorial=1\n",
+        "for i in range(1, num+1):\n",
+        "  factorial=factorial*i\n",
+        "print(f\"the factorial of {num} is {factorial}\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "num=int(input(\"enter your number:\"))\n",
+        "sum=0\n",
+        "for i in range(1,num+1):\n",
+        "   sum=sum+i\n",
+        "   print(f\"the sum of {num} natural no. is {sum}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "JKiy5ucTkvPX",
+        "outputId": "df8a05ae-8fcc-413d-8d9c-a31f5fa63f65"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter your number:3\n",
+            "the sum of 3 natural no. is 1\n",
+            "the sum of 3 natural no. is 3\n",
+            "the sum of 3 natural no. is 6\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "num=int(input(\"enter your number:\"))\n",
+        "def recursum(n):\n",
+        "  if n<=1:\n",
+        "     return n\n",
+        "  else: \n",
+        "    return n + recursum(n-1)\n",
+        "if num<0:\n",
+        "  print(\"enter a positive number\")\n",
+        "else:\n",
+        "  print(\"the sum is \", recursum(num))\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "J2T4AOJHmdox",
+        "outputId": "f37b136e-82f8-434f-ff41-f17544a2d988"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter your number:6\n",
+            "the sum is  21\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def cent(inches):\n",
+        "  return (inches * 2.54)\n",
+        "inch=int(input(\"enter your number:\"))\n"
+      ],
+      "metadata": {
+        "id": "LwLVjZCuqYE-"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "num=int(input(\"enter your number:\"))\n",
+        "sum=0\n",
+        "for i in range(1,num+1):\n",
+        "  sum=sum+i\n",
+        "print(f\"the sum of {num} is {sum}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "brt2ZB-cJfnl",
+        "outputId": "d72c7411-149b-4ca8-e3f6-b873f8c90a80"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter your number:9\n",
+            "the sum of 9 is 45\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "num=int(input(\"enter your number:\"))\n",
+        "\n",
+        "for i in range(1,11):\n",
+        "\n",
+        " a=print(f\"{num}x{i}={num*i}\")\n",
+        "b=type(a)\n",
+        "print(b)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "bKAcyoiKKGee",
+        "outputId": "88feeb44-9c85-4b69-e497-9930c525ee9c"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter your number:3\n",
+            "3x1=3\n",
+            "3x2=6\n",
+            "3x3=9\n",
+            "3x4=12\n",
+            "3x5=15\n",
+            "3x6=18\n",
+            "3x7=21\n",
+            "3x8=24\n",
+            "3x9=27\n",
+            "3x10=30\n",
+            "<class 'NoneType'>\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "marks=[45,78,86,77]\n",
+        "a=(sum(marks)/4)*100\n",
+        "print(a)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 203
+        },
+        "id": "JcsmF0WILHr1",
+        "outputId": "c360a956-a326-4968-9404-59be77ad8db9"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "TypeError",
+          "evalue": "ignored",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m<ipython-input-28-d50a4d052223>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m()\u001b[0m\n\u001b[1;32m      1\u001b[0m \u001b[0mmarks\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;36m45\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;36m78\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;36m86\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;36m77\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 2\u001b[0;31m \u001b[0ma\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0msum\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mmarks\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m/\u001b[0m\u001b[0;36m4\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m*\u001b[0m\u001b[0;36m100\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      3\u001b[0m \u001b[0mprint\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0ma\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mTypeError\u001b[0m: 'int' object is not callable"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "marks=[45,78,86,77]\n",
+        "sum=0\n",
+        "for i in range(len())"
+      ],
+      "metadata": {
+        "id": "9euLE9c7LH_m",
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 134
+        },
+        "outputId": "541ed2e7-7520-4321-f475-6da505c8cab9"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "SyntaxError",
+          "evalue": "ignored",
+          "traceback": [
+            "\u001b[0;36m  File \u001b[0;32m\"<ipython-input-1-dede838cbdd0>\"\u001b[0;36m, line \u001b[0;32m3\u001b[0m\n\u001b[0;31m    for i in range(len())\u001b[0m\n\u001b[0m                         ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m invalid syntax\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "n=int(input(\"enter  A NO.\"))\n",
+        "product=1\n",
+        "for i in range(n):\n",
+        "  product=product*(i+1)\n",
+        "print(product)"
+      ],
+      "metadata": {
+        "id": "jf6haswyKGiY",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "b4de67ad-5aaf-474c-fb30-ad3148cd7465"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter  A NO.4\n",
+            "24\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def maximum (num1,num2,num3):\n",
+        "   if(num1 > num2):\n",
+        "       if(num1>num3):\n",
+        "         return num1\n",
+        "       else: return num3\n",
+        "   else: \n",
+        "       if(num2>num3):\n",
+        "          return num2\n",
+        "       else:\n",
+        "           return num3\n",
+        "m=maximum(44, 45, 46)\n",
+        "print(\"the value of the maximum is \" + str(m))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "DafLIUlsk7Y4",
+        "outputId": "e4d16f2f-389e-496f-db5e-2072beccb355"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "the value of the maximum is 46\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def fahr (cel):\n",
+        "  return(cel * (9/5)) + 32\n",
+        "c=int(input(\"enter a number \"))\n",
+        "f=fahr(c)\n",
+        "print(\"f temp is \" +str(f))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "RIA24GHik7ep",
+        "outputId": "82c927da-e3cb-4d80-a6fb-7792610e6d67"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter a number 40\n",
+            "f temp is 104.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        ""
+      ],
+      "metadata": {
+        "id": "AjQfilQaKGrj"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def kelvin(cel):\n",
+        "  return(cel + 273.15)\n",
+        "c=int(input(\"enter a number \"))\n",
+        "k=kelvin(c)\n",
+        "print(\"k temp is \" +str(k))"
+      ],
+      "metadata": {
+        "id": "bdCuPRt-KGyN",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "a82dfc90-b5e0-4a64-ac72-6d26d4842210"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter a number 454344\n",
+            "k temp is 454617.15\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"hello\", end=\" \")\n",
+        "print(\"how \", end=\"\")\n",
+        "print(\"are\", end=\" \")\n",
+        "print(\"u?\", end=\" \")"
+      ],
+      "metadata": {
+        "id": "K1AVD3SwKG7S",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "07327ba9-5224-46f4-a465-9ad17a9b56d6"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "hello how are u? "
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def cent(inches):\n",
+        "  return (inches * 2.54)\n",
+        "inches=int(input(\"enter your number:\"))\n",
+        "c=cent(inches)\n",
+        "print(\"the valus is \"+ str(c))"
+      ],
+      "metadata": {
+        "id": "fgacOaNCKFa_",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "eb3d9b46-55ed-4298-a9b4-1e59fcc6279e"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "enter your number:56\n",
+            "the valus is 142.24\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "this= \"                       harry\"\n",
+        "print(this)\n",
+        "print(this.strip())"
+      ],
+      "metadata": {
+        "id": "ZTBhy5ztJfve",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "41019d85-a381-45de-bfaf-6d9a33fe7dba"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "                       harry\n",
+            "harry\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def remove_and_strip(string, word):\n",
+        "  newstr=string.replace(word, \"\")\n",
+        "  return newstr.strip()\n",
+        "this= \"                    iji   harry is a gud boi         \"\n",
+        "n=remove_and_strip (this,\"harry\")\n",
+        "print(n)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Fn0GK0DxsAq4",
+        "outputId": "f439df28-da08-4214-8246-f36b8354193e"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "iji    is a gud boi\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def print_table(num):\n",
+        "  for i in range(1,11):\n",
+        "    print(num,'x',i' = ',num*i)\n",
+        "n=int(input(\"enter your number:\"))\n",
+        "print_table(n)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 134
+        },
+        "id": "of6k-1AjuNm_",
+        "outputId": "da27cfa6-8d79-464b-d032-23b8a9e08f60"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "SyntaxError",
+          "evalue": "ignored",
+          "traceback": [
+            "\u001b[0;36m  File \u001b[0;32m\"<ipython-input-74-2dee76041d09>\"\u001b[0;36m, line \u001b[0;32m3\u001b[0m\n\u001b[0;31m    print(num,'x',i' = ',num*i)\u001b[0m\n\u001b[0m                       ^\u001b[0m\n\u001b[0;31mSyntaxError\u001b[0m\u001b[0;31m:\u001b[0m invalid syntax\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
